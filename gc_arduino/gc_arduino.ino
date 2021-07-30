@@ -61,20 +61,20 @@ void loop() {
 
   for (int i = 0; i < 3; i++) {
     // Blue, Green, Red
-    strip.setPixelColor(i, 0, 255, 0);
+    strip.setPixelColor(i, 55, 255, 0);
     strip.show();                     // Refresh strip
   }
 
   brightness += pulseMod;
 
-/*
+
   if (brightness > pot1Value) {
     brightness = pot1Value;
   }
   if (brightness < 0) {
     brightness = 0;
   }
-*/
+
 
   strip.setBrightness(brightness);
   strip.show();
