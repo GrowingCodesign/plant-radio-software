@@ -1,7 +1,7 @@
 # plant-radio-software
 A collection of all the software elements of the plant radio.
 
-**It is important to keep the following naming convention for the plant radios are able to execute the software properly:**
+**It is important to keep the following naming convention for the plant radios are able to execute the software properly. Furthermore, the sketches should be in their respective folder, or else the plant radio won't be able to locate them when booting.**
 
 ### Arduino sketch name:
 *gc_arduino.ino*
