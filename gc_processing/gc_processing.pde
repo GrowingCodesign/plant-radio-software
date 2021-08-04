@@ -32,9 +32,9 @@ void setup () {
   background(0);  // set inital background:
   
   
-  stroke(127,34,255);     //stroke color
-  strokeWeight(4);  
-  line(lastxPos, lastheight, xPos, height - (height/2));
+  stroke(255,255,255);     //stroke color
+  strokeWeight(3);  
+  line(lastxPos+150, lastheight, xPos+150, height - (height/2));
   
   oscP5 = new OscP5(this,12000);
   
@@ -50,9 +50,9 @@ void setup () {
 void draw () {
   if (newData) {
     //Drawing a line from Last inByte to the new one.
-    stroke(127,34,255);     //stroke color
-    strokeWeight(4);        //stroke wider
-    line(lastxPos, lastheight, xPos, height - inByte + (height/5));
+    stroke(255,255,255);     //stroke color
+    strokeWeight(3);        //stroke wider
+    line(lastxPos+150, lastheight, xPos+150, height - inByte + (height/5));
     
     lastxPos = xPos;
     lastheight = int(height-inByte + (height/5));
